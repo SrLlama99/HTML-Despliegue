@@ -30,6 +30,12 @@ h1 {
   margin-bottom: 30px;
 }
 
+#mensaje {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  color: aqua;
+}
+
 button {
   background-color: #ffffff;
   color: #2a5298;
