@@ -1,15 +1,10 @@
 const boton = document.getElementById('cambiarMensaje');
-const mensaje = document.getElementById('mensaje');
+const mensaje = document.getElementById('mensaje4');
+const form = document.getElementById('form');
+const messageField = form.elements['message'];
 
-const mensajes = [
-  '¡Gracias por visitar mi página!',
-  '¡Espero que tengas un gran día!',
-  '¡Sigue explorando y aprendiendo!',
-  '¡Bienvenido de nuevo, amigo!',
-  '¡Disfruta de esta web creada por Rodrigo!'
-];
-
-boton.addEventListener('click', () => {
-  const aleatorio = Math.floor(Math.random() * mensajes.length);
-  mensaje.textContent = mensajes[aleatorio];
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const guardar = messageField.value;
+  mensaje.textContent = "¡Hola, " + guardar + "!";
 });

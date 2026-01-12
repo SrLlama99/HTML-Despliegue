@@ -25,12 +25,17 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 }
 
-#mensaje {
+#mensaje2 {
   font-size: 1.3em;
   margin-bottom: 30px;
 }
 
-#mensaje {
+#mensaje3 {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+
+#mensaje, #mensaje4 {
   font-size: 1.3em;
   margin-bottom: 30px;
   color: aqua;
@@ -55,4 +60,10 @@ button:hover {
 
 img {
   width: 100px;
+}
+
+input {
+  border-radius: 10px;
+  border: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
