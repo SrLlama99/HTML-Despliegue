@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Rodrigo de Mora</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Rodrigo de Mora</h1>
+    <p id="mensaje">¡Bienvenido a mi página personal!</p>
+    <p id="mensaje2">Frase añadida para completar la práctica 4.1</p>
+    <p id="mensaje3">Este párrafo es para cambiar el index</p> 
+    <img src="images/Getafe_CF_Logo.png"><br>
+    <form method="post" id="form">
+      <p>Indica tu nombre: <input type="text" id="message" name="message"></p> 
+      <input type="submit" value="Enviar"> 
+    </form>
+    <?php
+    if(!isset($_POST['message'])){
+    ?>
+    <p id="mensaje4">¡Hola de nuevo!</p>
+    <?php
+    } else {
+        echo '<p id="mensaje4">¡Hola' . " " . $_POST['message'] . '!</p>';
+    }
+    ?>
+  </div>
+</body>
+</html>
